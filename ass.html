@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traffic light</title>
+    <style>
+        #rect{
+            height: 550px;
+            width: 200px;
+            background-color: black;
+            border-radius: 20px;
+            border: solid 5px rgb(222, 48, 48);
+           margin-left: 40%;
+           padding: 20px;
+        }
+     #box{
+        height: 150px;
+        width: 150px;
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px red;
+        text-shadow: 0px 0px 10px red;
+        text-align: center;
+        line-height: 100px;
+        color: black;
+        animation-name: box;
+        animation-duration: 4s;
+        align-items: center;
+        margin: 12%;
+        transition: 0.5s ease-in-out 0.5s;
+    }
+    #box1{
+        height: 150px;
+        width: 150px;
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px yellow;
+        text-align: center;
+        line-height: 100px;
+        color: black;
+        animation-name: box1;
+        animation-duration: 8s;
+        align-items: center;
+        margin: 12%;
+        transition: 0.5s ease-in-out 0.5s;
+    }
+    #box2{
+        height: 150px;
+        width: 150px;
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px green;
+        text-align: center;
+        line-height: 100px;
+        color: black;
+        animation-name: box2;
+        animation-duration: 12s;
+        align-items: center;
+        margin: 12%;
+        transition: 0.5s ease-in-out 0.5s;
+    }
+    #rect1{
+        height: 200px;
+            width: 500px;
+            background-color: black;
+            border-radius: 10px;
+            border: solid 1px black;
+           margin-bottom: 100%;
+           padding: 0px;
+           display: flex;
+           align-items: baseline;
+
+    }
+    @keyframes box{
+        from{background-color: rgb(247, 141, 122);}
+        to{ background-color: rgb(238, 17, 17);}
+    }
+    @keyframes box1{
+        from{background-color: rgb(241, 241, 122);}
+        to{ background-color: rgb(238, 238, 14);}
+    }
+    @keyframes box2{
+        from{background-color: rgb(152, 242, 152);}
+        to{ background-color: rgb(10, 236, 10);}
+    }
+    </style>
+ 
+</head>
+<body>
+    <div id="rect">
+    <div class="container">
+    <div id="box"></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    </div>
+    <div id="arrow"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.box{
+    width: 462px;
+    height: 462px;
+    transition: 1s  ease-in, 1400ms transform ease-out 1s;
+    float: left;
+    padding: 0px;
+    padding-left: 550px;
+}
+.box:hover{
+    transform: rotate(360deg)
+}

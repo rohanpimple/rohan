@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px red;
+        text-shadow: 0px 0px 10px red;
+        text-align: center;
+        line-height: 200px;
+        color: aliceblue;
+        animation-name: rohan;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px yellow;
+        text-shadow: 0px 0px 10px yellow;
+        text-align: center;
+        line-height: 200px;
+        color: aliceblue;
+        animation-name: prasanna;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px green;
+        text-shadow: 0px 0px 10px green;
+        text-align: center;
+        line-height: 200px;
+        color: aliceblue;
+        animation-name: harshit;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rohan{
+        from{background-color: white;}
+        to{background-color: red;}
+    }
+    @keyframes prasanna{
+        from{background-color: white;}
+        to{background-color: yellow;}
+    }
+    @keyframes harshit{
+        from{background-color: white;}
+        to{background-color: green;}
+    }
+    .common{
+        height: 250px;
+        width: 250px;
+        border: solid 1px red;
+        float: right;
+        display: flex;
+
+    }
+</style>
+<body>
+    <div class="box">rohan</div>
+    <div class="box1">prasanna</div>
+    <div class="box2">harshit</div>
+    <div class="common">rotate
+        <img src= id="rotate">
+    </div>
+
+    
+       
+    
+</body>
+</html>
